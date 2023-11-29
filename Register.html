@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UFT-8">
+    <title>Register</title>
+</head>
+<body>
+
+    <form action="Register.php" method="post">
+        <input type="text" name="nome" maxlength="50" required placeholder=""/><br>
+        <input type="text" name="cognome" maxlength="50" required placeholder=""/><br>
+        <input type="text" name="email" maxlength="50" required placeholder=""/><br>
+        <input type="text" name="password" maxlength="50" required placeholder=""/><br>
+        <input type="number" name="yob" min="1900" max="2023" required placeholder="YYYY"/><br>
+        <label for="hobbies">Choose a hobbies:</label>
+        <select id="hobbies"name="hobby">
+            <option value="Nuoto">Nuoto</option>
+            <option value="Corsa">Fregna</option>
+            <option value="Origami">Origami</option>
+            <option value="Musica">Musica</option>
+        </select><br>
+        <button type="submit" >enter</button>
+    </form>
+
+</body>
+</html>

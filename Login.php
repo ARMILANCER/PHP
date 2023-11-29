@@ -8,7 +8,7 @@ if($con->connect_error){
 $email = $_POST["email"];
 $password = $_POST["password"];
 
-$sql = "SELECT * FROM utenti WHERE Email = '$email' AND Password = '$password'";
+$sql = "SELECT * FROM dati WHERE Email = '$email' AND Password = '$password'";
 
 if($con->query($sql)){
     header("Refresh: 3; URL=https://www.example.com");
